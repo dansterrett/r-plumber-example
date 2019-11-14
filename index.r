@@ -1,3 +1,3 @@
-library(plumber)
-r <- plumb("plumber.R")  # Where 'plumber.R' is the location of the file shown above
-r$run(port=8000)
+path <- file.path(normalizePath(getwd()), "plumber.r")
+r <- plumber::plumb(path)
+r$run(host='0.0.0.0', port=8000)

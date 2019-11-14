@@ -53,6 +53,7 @@ Hash: 498643e765d1442ba7b1160a1df3abf9
 Package: plumber
 Source: CRAN
 Version: 0.4.6
+Hash: 56b7230d3ec9bfe86c17b83af6a9b011
 Requires: R6, crayon, httpuv, jsonlite, stringi
 
 Package: promises
