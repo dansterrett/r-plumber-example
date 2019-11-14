@@ -1,0 +1,9 @@
+---
+applications:
+- name: r-plumber-example
+  memory: 768M
+  instances: 1
+  random-route: true
+  command: R -f index.r
+  buildpacks:
+  - https://github.com/cloudfoundry/r-buildpack.git

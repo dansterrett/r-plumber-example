@@ -1,0 +1,17 @@
+---
+packages:
+  - cran_mirror: https://cran.r-project.org
+    num_threads: 10
+    packages:
+      - name: BH
+      - name: R6
+      - name: Rcpp
+      - name: crayon
+      - name: httpuv
+      - name: jsonlite
+      - name: later
+      - name: magrittr
+      - name: plumber
+      - name: promises
+      - name: rlang
+      - name: stringi
