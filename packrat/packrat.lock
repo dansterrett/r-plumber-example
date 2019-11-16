@@ -45,6 +45,11 @@ Source: CRAN
 Version: 1.5
 Hash: bdc4d48c3135e8f3b399536ddf160df4
 
+Package: modules
+Source: CRAN
+Version: 0.8.0
+Hash: f1a8137576ff6da9bcc3c90a9cd848dd
+
 Package: packrat
 Source: CRAN
 Version: 0.5.0

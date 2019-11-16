@@ -48,12 +48,45 @@ To run the image in a container, run:
 ```
 docker run --rm --detach -p 8000:8000 dansterrett/r-plumber-example:latest
 ```
+If you get an error on startup, you might want to try creating the container first. Then, starting it:
+```
+docker container create -ti dansterrett/r-plumber-example:7 bash
+docker container start <containerID>
+
+# Example code for inspecting the files
+docker exec <containerID> ls -al /
+```
 
 ### View files on container
 You can execute various commands on a running container. To view the files:
 ```
 docker exec <containerID> ls -al
 ```
+
+## Deploy
+The deployment process is a series of steps.
+1. Create a new docker image from the most recent code.
+2. Tag the image to contain the repo URI from AWS ECR.
+3. Push the image to AWS ECR.
+4. Create a cluster (if one doesn't already exist) on AWS ECS.
+5. Create a new task definition on AWS ECS.
+6. Run the task.
+
+### Push to AWS ECR
+
+### Create Cluster
+
+### Create Task Definition
+
+A task belongs to a Network Interface which belongs to a Security Group which has inbound/outbound rules. Make sure the inbound rules open the ports that we need.
+
+### Run Task
+
+
+
+
+
+
 
 ## Pivotal Cloud Foundry
 The following files are only used for Pivotal Cloud Foundry:
