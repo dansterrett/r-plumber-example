@@ -1,0 +1,11 @@
+packrat
+!packrat/init.R
+!packrat/packrat.lock
+!packrat/packrat.opts
+# !packrat/src
+# If we have any linux binaries, we definitely want these copied to the image rather than having to re-install them because it will save A LOT of time
+!packrat/lib/x86_64-pc-linux-gnu/3.6.1
+.Rproj.user
+manifest.yml
+r-plumber-example.Rproj
+r.yml

@@ -1,0 +1,13 @@
+packrat/lib
+packrat/lib-ext
+packrat/lib-R
+packrat/src
+
+.Rproj.user
+.Rhistory
+
+.DS_Store
+
+*.ignore*
+packrat/lib*/
+packrat/src/
